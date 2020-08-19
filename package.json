@@ -1,0 +1,16 @@
+{
+  "name": "nightwatch-testing-library-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "dolinskaya <dolinskaya@tutu.tech>",
+  "license": "ISC",
+  "dependencies": {
+    "@testing-library/nightwatch": "^2.0.0",
+    "nightwatch": "^1.3.7"
+  }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="example.spec"
+    errors="1" failures="0" hostname="" id="" package="example.spec" skipped="0"
+    tests="1" time="2.608" timestamp="">
+  
+    <testcase name="Demo test ecosia.org" classname="example.spec" time="2.608" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error: [object Object]
+   
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
