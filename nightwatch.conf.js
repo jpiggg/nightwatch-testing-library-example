@@ -10,9 +10,9 @@ module.exports = {
 
   selenium: {
     start_process: false,
-    host: "hub.lambdatest.com",
+    host: "127.0.0.1",
     log_path: "./reports/visual-regression",
-    port: 80,
+    port: 4444,
     username: "lambdatesttutu",
     access_key: "i0eRw1B4MJwKDNIRowTQBdYCgZR0nWVUX4AW3WgTRK9odzvcJp",
   },
@@ -56,10 +56,12 @@ module.exports = {
     firefox: {
       desiredCapabilities: {
         browserName: "firefox",
-        version: "23.0",
+        version: "78.0",
+        selenium_version: "3.13.0",
+        "firefox.driver": "v0.26.0",
         "moz:firefoxOptions": {
           args: [
-            "--headless",
+            // "--headless",
             "--width=1360",
             "--height=10000",
             "-force-device-scale-factor=1",
@@ -67,6 +69,30 @@ module.exports = {
         },
         ...tunnelSettings,
       },
+    },
+    ie: {
+      desiredCapabilities: {
+        platform: "Windows 8.1",
+        browserName: "Internet Explorer",
+        version: "11.0",
+        ...tunnelSettings,
+        selenium_version: "3.13.0",
+        console: true,
+        network: true,
+        ignoreZoomSetting: true,
+        ignoreProtectedModeSettings: true,
+        initialBrowserUrl: false,
+        ensureCleanSession: true,
+        unexpectedAlertBehaviour: "accept",
+        nativeEvents: false,
+        disablePopupBlocking: true,
+        enablePersistentHover: true,
+        javascriptEnabled: true,
+      },
+      compatibility: 11001,
+      popups: true,
+      flash: true,
+      driver: "3.4.0",
     },
   },
 };
