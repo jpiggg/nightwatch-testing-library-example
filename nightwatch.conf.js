@@ -10,9 +10,9 @@ module.exports = {
 
   selenium: {
     start_process: false,
-    host: "127.0.0.1",
+    host: "hub.lambdatest.com",
     log_path: "./reports/visual-regression",
-    port: 4444,
+    port: 80,
     username: "lambdatesttutu",
     access_key: "i0eRw1B4MJwKDNIRowTQBdYCgZR0nWVUX4AW3WgTRK9odzvcJp",
   },
@@ -56,12 +56,14 @@ module.exports = {
     firefox: {
       desiredCapabilities: {
         browserName: "firefox",
-        version: "78.0",
-        selenium_version: "3.13.0",
+        "version" : "75.0",
+        platform: "Windows 10",
+        "selenium_version": "3.13.0",
         "firefox.driver": "v0.26.0",
+        "enableCustomTranslation": true,
         "moz:firefoxOptions": {
           args: [
-            // "--headless",
+            "--headless",
             "--width=1360",
             "--height=10000",
             "-force-device-scale-factor=1",
