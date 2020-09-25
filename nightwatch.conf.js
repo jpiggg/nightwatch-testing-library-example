@@ -56,11 +56,10 @@ module.exports = {
     firefox: {
       desiredCapabilities: {
         browserName: "firefox",
-        "version" : "75.0",
-        platform: "Windows 10",
-        "selenium_version": "3.13.0",
+        version: "75.0",
+        selenium_version: "3.13.0",
         "firefox.driver": "v0.26.0",
-        "enableCustomTranslation": true,
+        enableCustomTranslation: true,
         "moz:firefoxOptions": {
           args: [
             "--headless",
@@ -74,11 +73,12 @@ module.exports = {
     },
     ie: {
       desiredCapabilities: {
-        platform: "Windows 8.1",
+        platform: "Windows 10",
         browserName: "Internet Explorer",
         version: "11.0",
-        ...tunnelSettings,
-        selenium_version: "3.13.0",
+        enableCustomTranslation: true,
+        selenium_version: "2.37.1",
+        "ie.driver": "v0.26.0",
         console: true,
         network: true,
         ignoreZoomSetting: true,
@@ -95,6 +95,11 @@ module.exports = {
       popups: true,
       flash: true,
       driver: "3.4.0",
+    },
+    edge: {
+      browserName: "MicrosoftEdge",
+      platform: "Windows 10",
+      version: "18.0",
     },
   },
 };

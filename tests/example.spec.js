@@ -2,13 +2,12 @@ const { getQueriesFrom } = require("@testing-library/nightwatch");
 
 module.exports = {
   "Demo test ecosia.org": async function (browser) {
-    browser.url("https://www.ecosia.org/");
+    browser.url("https://www.google.ru/");
 
     const { getAllByText } = getQueriesFrom(browser);
 
-    const input = await getAllByText("Sign in to keep track of your impact!");
+    const { selector } = await getAllByText("Google");
 
-    console.log("=> ", input);
-    browser.assert.titleContains("Ecosia").end();
+    console.log("--------selector---", selector);
   },
 };
