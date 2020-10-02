@@ -62,7 +62,7 @@ module.exports = {
         enableCustomTranslation: true,
         "moz:firefoxOptions": {
           args: [
-            "--headless",
+            // "--headless",
             "--width=1360",
             "--height=10000",
             "-force-device-scale-factor=1",
