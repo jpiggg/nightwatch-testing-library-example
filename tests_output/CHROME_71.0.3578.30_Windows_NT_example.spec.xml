@@ -5,11 +5,9 @@
 
   <testsuite name="example.spec"
     errors="0" failures="0" hostname="" id="" package="example.spec" skipped="0"
-    tests="1" time="5.149" timestamp="">
+    tests="1" time="3.736" timestamp="">
   
-    <testcase name="Demo test ecosia.org" classname="example.spec" time="5.149" assertions="1">
-
-    
+    <testcase name="Demo test ecosia.org" classname="example.spec" time="3.736" assertions="0">
     </testcase>
   
 
